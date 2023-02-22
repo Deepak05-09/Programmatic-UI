@@ -25,15 +25,24 @@ class UiswitchVC: UIViewController {
         label.textColor = .purple
         label.textAlignment = .center
         label.font = UIFont(name: "Avenir next", size: 100)
+        label.adjustsFontSizeToFitWidth = true
         
         view.addSubview(label)
     }
         
     func setupSwitch(){
         view.addSubview(swiTch)
-        swiTch.frame = CGRect(x: 40, y: 500, width: 100, height: 100)
-        swiTch.center = view.center
-        swiTch.backgroundColor = .green
+        swiTch.frame = CGRect(x: 40, y: 500, width: 50, height: 50)
+        swiTch.tintColor = .red
+        swiTch.onTintColor = .green
+        
+        swiTch.offImage = UIImage(systemName: "sun.max")
+        swiTch.onImage = UIImage(systemName: "house")
+        
+        swiTch.addTarget(self, action:#selector(action) , for: .valueChanged)
     }
-
+     
+    @objc func action(){
+        label.text = "\(swiTch.isOn ? "ON" : "OFF" )"
+    }
 }

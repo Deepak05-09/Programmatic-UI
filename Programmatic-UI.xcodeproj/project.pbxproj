@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0789882F29A35BE900A09676 /* GridCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789882E29A35BE900A09676 /* GridCVC.swift */; };
 		0789883529A48F8A00A09676 /* UISliderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789883429A48F8A00A09676 /* UISliderVC.swift */; };
 		0789883729A4A01200A09676 /* UIStepperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789883629A4A01200A09676 /* UIStepperVC.swift */; };
 		0789883929A4A84500A09676 /* UiswitchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789883829A4A84400A09676 /* UiswitchVC.swift */; };
+		0789883B29A4C52800A09676 /* segmentControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789883A29A4C52800A09676 /* segmentControlVC.swift */; };
+		0789883F29A5D71A00A09676 /* GridCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789883E29A5D71A00A09676 /* GridCVC.swift */; };
+		0789884329A5E9D000A09676 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789884229A5E9D000A09676 /* ViewController.swift */; };
 		1BD45B7B299B55E9004A624C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD45B7A299B55E9004A624C /* AppDelegate.swift */; };
 		1BD45B7D299B55E9004A624C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD45B7C299B55E9004A624C /* SceneDelegate.swift */; };
 		1BD45B7F299B55E9004A624C /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD45B7E299B55E9004A624C /* FirstScreen.swift */; };
@@ -21,10 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0789882E29A35BE900A09676 /* GridCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCVC.swift; sourceTree = "<group>"; };
 		0789883429A48F8A00A09676 /* UISliderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderVC.swift; sourceTree = "<group>"; };
 		0789883629A4A01200A09676 /* UIStepperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStepperVC.swift; sourceTree = "<group>"; };
 		0789883829A4A84400A09676 /* UiswitchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiswitchVC.swift; sourceTree = "<group>"; };
+		0789883A29A4C52800A09676 /* segmentControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segmentControlVC.swift; sourceTree = "<group>"; };
+		0789883E29A5D71A00A09676 /* GridCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCVC.swift; sourceTree = "<group>"; };
+		0789884229A5E9D000A09676 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1BD45B77299B55E9004A624C /* Programmatic-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Programmatic-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD45B7A299B55E9004A624C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BD45B7C299B55E9004A624C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +77,9 @@
 				0789883429A48F8A00A09676 /* UISliderVC.swift */,
 				0789883629A4A01200A09676 /* UIStepperVC.swift */,
 				0789883829A4A84400A09676 /* UiswitchVC.swift */,
-				0789882E29A35BE900A09676 /* GridCVC.swift */,
+				0789883A29A4C52800A09676 /* segmentControlVC.swift */,
+				0789883E29A5D71A00A09676 /* GridCVC.swift */,
+				0789884229A5E9D000A09676 /* ViewController.swift */,
 				1BD45B83299B55EB004A624C /* Assets.xcassets */,
 				1BD45B85299B55EB004A624C /* LaunchScreen.storyboard */,
 				1BD45B88299B55EB004A624C /* Info.plist */,
@@ -152,12 +158,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0789882F29A35BE900A09676 /* GridCVC.swift in Sources */,
+				0789883F29A5D71A00A09676 /* GridCVC.swift in Sources */,
 				1BD45B7F299B55E9004A624C /* FirstScreen.swift in Sources */,
 				1BD45BB5299F5219004A624C /* DatePickerVC.swift in Sources */,
 				1BD45B8F299B5D69004A624C /* SecondScreen.swift in Sources */,
+				0789884329A5E9D000A09676 /* ViewController.swift in Sources */,
 				1BD45B7B299B55E9004A624C /* AppDelegate.swift in Sources */,
 				0789883929A4A84500A09676 /* UiswitchVC.swift in Sources */,
+				0789883B29A4C52800A09676 /* segmentControlVC.swift in Sources */,
 				0789883529A48F8A00A09676 /* UISliderVC.swift in Sources */,
 				0789883729A4A01200A09676 /* UIStepperVC.swift in Sources */,
 				1BD45B7D299B55E9004A624C /* SceneDelegate.swift in Sources */,
