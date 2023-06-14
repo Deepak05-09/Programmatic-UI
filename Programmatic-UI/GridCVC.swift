@@ -52,13 +52,15 @@ class GridCVC: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .left)
+        
+//        let nc = UINavigationController(rootViewController: collectionView)
+//        UINavigationController.pushViewController(nc)
         print(indexPath.row)
     }
     
-     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath)->CGSize{
-        return CGSize(width: <#T##Double#>, height: <#T##Double#>)
-    }
+//     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath)->CGSize{
+//        return CGSize(width: <#T##Double#>, height: <#T##Double#>)
+//    }
     
 
 }
@@ -70,7 +72,9 @@ class TeamCell : UICollectionViewCell{
         super.init(frame: frame)
         
         addSubview(imageView)
+        addSubview(label)
         imageView.frame = bounds
+        label.frame = bounds
         setCellShadow()
         
     }
@@ -78,11 +82,12 @@ class TeamCell : UICollectionViewCell{
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+    let label = UILabel()
+   
     let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage()
-        imageView.contentMode = .scaleToFill
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
@@ -90,5 +95,7 @@ class TeamCell : UICollectionViewCell{
         layer.shadowOffset = CGSize(width: 0, height: 4)
         layer.shadowOpacity = 3
         layer.shadowRadius = 3
+        label.text = "Hello"
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-16-[v0]|",metrics: nil, views: ["v0":label]))
     }
 }

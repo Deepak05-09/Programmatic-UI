@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         layout.minimumLineSpacing = 1
         layout.minimumInteritemSpacing = 1
         layout.sectionInset = UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2)
+        
         let vc = GridCVC(collectionViewLayout: layout)
        vc.title = "House"
         
